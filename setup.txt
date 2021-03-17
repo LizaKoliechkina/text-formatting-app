@@ -1,0 +1,11 @@
+
+
+1. You should have Docker installed
+2. Edit `.env` file and override whatever environmental variable you need
+3. Start postgres from project directory
+`docker run -it --rm --env-file .env -p 5432:5432 postgresql`
+4. Execute `./server/run_dev.sh`
+
+
+
+# docker exec -it container_id psql -U postgres db_name
